@@ -69,7 +69,9 @@ void setup() {
 void loop() {
   int i = 0;
   WiFiClient client = server.available();   // listen for incoming clients
-
+  tmp006.wake();
+  temp = tmp006.readDieTempC();
+  
   if (client) {                             // if you get a client,
     Serial.println("new client");           // print a message out the serial port
     char buffer[150] = {0};                 // make a buffer to hold incoming data
@@ -82,10 +84,6 @@ void loop() {
           // if the current line is blank, you got two newline characters in a row.
           // that's the end of the client HTTP request, so send a response:
           if (strlen(buffer) == 0) {
-            tmp006.wake();
-            temp = tmp006.readObjTempC();
-            //Serial.print("Temperature: ");
-            //Serial.println(temp);
             // HTTP headers always start with a response code (e.g. HTTP/1.1 200 OK)
             // and a content-type so the client knows what's coming, then a blank line:
             client.println("HTTP/1.1 200 OK");
@@ -93,10 +91,7 @@ void loop() {
             client.println();
 
             // the content of the HTTP response follows the header:
-            client.println("<html><head><title>Energia CC3200 WiFi Web Server</title></head><body align=center>");
-            client.println("<h1 align=center><font color=\"red\"> CC3200 WiFi Sensor Testing</font></h1>");
-            client.print("RED LED <button onclick=\"location.href='/H'\">HIGH</button>");
-            client.println(" <button onclick=\"location.href='/L'\">LOW</button><br>");
+            client.println("CC3200 Board Active");
             client.print("Temperature: ");
             client.println(temp);
 
@@ -113,19 +108,14 @@ void loop() {
         else if (c != '\r') {    // if you got anything else but a carriage return character,
           buffer[i++] = c;      // add it to the end of the currentLine
         }
-
-        // Check to see if the client request was "GET /H" or "GET /L":
-        if (endsWith(buffer, "GET /H")) {
-          digitalWrite(RED_LED, HIGH);               // GET /H turns the LED on
-        }
-        if (endsWith(buffer, "GET /L")) {
-          digitalWrite(RED_LED, LOW);                // GET /L turns the LED off
-        }
+        // Heartbeat
+        digitalWrite(RED_LED, HIGH);
       }
-    }e
+    }
     // close the connection:
     client.stop();
     Serial.println("client disonnected");
+    digitalWrite(RED_LED, LOW);
   }
 }
 
