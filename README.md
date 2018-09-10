@@ -7,3 +7,5 @@ There are two ADAS's on the board, one master one slave for a total of 12 electr
 Pins to use from the Patient Cable: 7, 9, 10, 11, 14
 
 If we break the D-Bus just find another from Digikey
+
+![trouble](trouble_shooting.png)
