@@ -21,3 +21,9 @@ ADAS1000 Example Schematic: http://www.analog.com/media/en/reference-design-docu
 ## Flashing
 
 There is a good chip that supposedly integrated many of the function we need on a single module: the [CC3200MOD](http://www.ti.com/product/CC3200MOD/samplebuy). [Here](https://e2e.ti.com/support/wireless_connectivity/simplelink_wifi_cc31xx_cc32xx/f/968/t/514171?Questions-about-how-to-program-a-CC3200-based-custom-board) is a forumn post that answers how to flash the chip.
+
+## Other Wifi Modules
+
+[ThingSpeak](https://thingspeak.com/)
+
+[ESP8266](https://www.sparkfun.com/products/13678)
