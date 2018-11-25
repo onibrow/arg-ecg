@@ -2118,6 +2118,66 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <text x="-5.7" y="2.6" size="1.2" layer="25" font="vector">&gt;NAME</text>
 <text x="-5.7" y="-3.8" size="1.2" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="SOT23-5">
+<wire x1="0" y1="-1.29" x2="0" y2="-1.3" width="0.01" layer="21"/>
+<wire x1="1.42" y1="0.8" x2="1.42" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1.42" y1="-0.8" x2="-1.42" y2="-0.8" width="0.127" layer="51"/>
+<wire x1="-1.42" y1="-0.8" x2="-1.42" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.42" y1="0.8" x2="1.42" y2="0.8" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="0.65" x2="1.28" y2="0.65" width="0.075" layer="21"/>
+<wire x1="1.28" y1="0.65" x2="1.28" y2="-0.66" width="0.075" layer="21"/>
+<wire x1="1.28" y1="-0.66" x2="-1.27" y2="-0.66" width="0.075" layer="21"/>
+<wire x1="-1.27" y1="-0.66" x2="-1.27" y2="0.65" width="0.075" layer="21"/>
+<wire x1="-1.75" y1="2.25" x2="1.75" y2="2.25" width="0.254" layer="39"/>
+<wire x1="1.75" y1="2.25" x2="1.75" y2="-2.25" width="0.254" layer="39"/>
+<wire x1="1.75" y1="-2.25" x2="-1.75" y2="-2.25" width="0.254" layer="39"/>
+<wire x1="-1.75" y1="-2.25" x2="-1.75" y2="2.25" width="0.254" layer="39"/>
+<rectangle x1="-1.11" y1="0.68" x2="-0.78" y2="1.43" layer="51"/>
+<rectangle x1="0.79" y1="0.67" x2="1.12" y2="1.42" layer="51"/>
+<rectangle x1="-1.11" y1="-1.42" x2="-0.78" y2="-0.67" layer="51"/>
+<rectangle x1="-0.16" y1="-1.42" x2="0.17" y2="-0.67" layer="51"/>
+<rectangle x1="0.79" y1="-1.42" x2="1.12" y2="-0.67" layer="51"/>
+<smd name="1" x="-0.95" y="-1.29" dx="0.69" dy="0.99" layer="1"/>
+<smd name="2" x="0" y="-1.29" dx="0.69" dy="0.99" layer="1"/>
+<smd name="3" x="0.95" y="-1.29" dx="0.69" dy="0.99" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.69" dy="0.99" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.69" dy="0.99" layer="1"/>
+<text x="-2.54" y="2.54" size="1.016" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.016" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+</package>
+<package name="USB_MICRO">
+<description>https://www.digikey.com/product-detail/en/molex-llc/0475890001/WM17143CT-ND/1832255</description>
+<pad name="P$1" x="-4.175" y="0" drill="1.3" shape="octagon" rot="R90"/>
+<pad name="P$2" x="4.175" y="0" drill="1.3" shape="octagon" rot="R90"/>
+<rectangle x1="-2.5" y1="-1" x2="-0.5" y2="1" layer="29"/>
+<rectangle x1="0.5" y1="-1" x2="2.5" y2="1" layer="29"/>
+<wire x1="0" y1="-2.15" x2="-5" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.15" x2="5" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.15" x2="-5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2" x2="-5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1.75" x2="-5" y2="4" width="0.127" layer="21"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="5" y1="-1.75" x2="5" y2="-2" width="0.127" layer="21"/>
+<wire x1="5" y1="-2" x2="5" y2="-2.15" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1.75" x2="-4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="-1.75" x2="4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.75" x2="5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="4.5" y1="-1.75" x2="4.75" y2="-2" width="0.127" layer="21"/>
+<wire x1="4.75" y1="-2" x2="5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2" x2="-4.75" y2="-2" width="0.127" layer="21"/>
+<wire x1="-4.75" y1="-2" x2="-4.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="-1.45" x2="3.75" y2="-1.45" width="0.05" layer="51"/>
+<smd name="VCC" x="-1.3" y="3" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="D-" x="-0.65" y="3" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="D+" x="0" y="3" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="ID" x="0.65" y="3" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<smd name="GND" x="1.3" y="3" dx="0.4" dy="1.35" layer="1" rot="R180"/>
+<rectangle x1="-5" y1="-1.5" x2="5" y2="4" layer="39"/>
+<text x="-5" y="4.25" size="0.7" layer="25" font="vector">&gt;NAME</text>
+<pad name="P$3" x="-2.225" y="3" drill="0.65" diameter="1.016" shape="long" rot="R90"/>
+<pad name="P$4" x="2.225" y="3" drill="0.85" diameter="1.016" shape="long" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LETTER_L">
@@ -2262,6 +2322,43 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <text x="-2.54" y="-2.54" size="1.016" layer="94" font="vector">&gt;VALUE</text>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="MIC5504-3.3">
+<description>https://www.digikey.com/product-detail/en/microchip-technology/MIC5504-3.3YM5-TR/576-4764-1-ND/4864028</description>
+<pin name="VIN" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="3.3V" x="10.16" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="EN" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="0" y="5.08" size="1.27" layer="94" align="center">MIC5504-3.3</text>
+</symbol>
+<symbol name="USB_MICRO">
+<pin name="VCC" x="10.16" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D-" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="D+" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="ID" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="10.16" size="2.032" layer="94" align="top-left">&gt;NAME</text>
+</symbol>
+<symbol name="VCC">
+<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="3.3V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3402,6 +3499,75 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MIC5504-3.3" prefix="IC">
+<description>https://www.digikey.com/product-detail/en/microchip-technology/MIC5504-3.3YM5-TR/576-4764-1-ND/4864028
+&lt;br&gt; &lt;br&gt;
+
+5.5V -&gt; 3.3V buck converter</description>
+<gates>
+<gate name="G$1" symbol="MIC5504-3.3" x="-0.1" y="-0.1"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="5"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB_MICRO" prefix="J">
+<description>https://www.digikey.com/product-detail/en/molex-llc/0475890001/WM17143CT-ND/1832255</description>
+<gates>
+<gate name="G$1" symbol="USB_MICRO" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="USB_MICRO">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+"/>
+<connect gate="G$1" pin="D-" pad="D-"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="ID" pad="ID"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;h3&gt;VCC Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Positive voltage supply (traditionally for a BJT device, C=collector).&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -3417,7 +3583,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="FRAME1" library="scono" deviceset="FRAME_SCHEMATIC" device="">
 <attribute name="AUTHOR" value="S.Ono"/>
 <attribute name="REV" value="A"/>
-<attribute name="SUBSYSTEM-NAME" value="ADAS1000"/>
+<attribute name="SUBSYSTEM_NAME" value="ADAS1000"/>
 </part>
 <part name="U1" library="scono" deviceset="ADAS1000" device=""/>
 <part name="C1" library="scono" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
@@ -3429,10 +3595,28 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="R2" library="scono" deviceset="R-US_" device="R0603" value="100k"/>
 <part name="R3" library="scono" deviceset="R-US_" device="R0603" value="40k"/>
 <part name="Y1" library="scono" deviceset="CRYSTAL" device="" value="8.192MHz"/>
-<part name="C4" library="scono" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
-<part name="C5" library="scono" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="C4" library="scono" deviceset="CAP" device="0603-CAP" value="18pF"/>
+<part name="C5" library="scono" deviceset="CAP" device="0603-CAP" value="18pF"/>
 <part name="SUPPLY3" library="scono" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="scono" deviceset="GND" device=""/>
+<part name="C6" library="scono" deviceset="CAP" device="0603-CAP" value="10uF"/>
+<part name="C7" library="scono" deviceset="CAP" device="0603-CAP" value="10uF"/>
+<part name="SUPPLY5" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY6" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY7" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY8" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY9" library="scono" deviceset="GND" device=""/>
+<part name="FRAME2" library="scono" deviceset="FRAME_SCHEMATIC" device="">
+<attribute name="AUTHOR" value="S.Ono"/>
+<attribute name="REV" value="A"/>
+<attribute name="SUBSYSTEM_NAME" value="Power"/>
+</part>
+<part name="IC2" library="scono" deviceset="MIC5504-3.3" device=""/>
+<part name="J1" library="scono" deviceset="USB_MICRO" device=""/>
+<part name="SUPPLY10" library="scono" deviceset="VCC" device=""/>
+<part name="SUPPLY11" library="scono" deviceset="GND" device=""/>
+<part name="SUPPLY13" library="scono" deviceset="VCC" device=""/>
+<part name="U$2" library="scono" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3440,7 +3624,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0">
-<attribute name="SUBSYSTEM-NAME" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="SUBSYSTEM_NAME" x="0" y="0" size="1.778" layer="96" display="off"/>
 <attribute name="REV" x="0" y="0" size="1.778" layer="96" display="off"/>
 <attribute name="AUTHOR" x="0" y="0" size="1.778" layer="96" display="off"/>
 </instance>
@@ -3454,11 +3638,18 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="R1" gate="G$1" x="116.84" y="58.42" rot="R90"/>
 <instance part="R2" gate="G$1" x="111.76" y="58.42" rot="R90"/>
 <instance part="R3" gate="G$1" x="129.54" y="58.42" rot="R90"/>
-<instance part="Y1" gate="G$1" x="88.9" y="86.36" rot="R270"/>
-<instance part="C4" gate="G$1" x="83.82" y="88.9" rot="R180"/>
-<instance part="C5" gate="G$1" x="83.82" y="83.82" rot="R180"/>
-<instance part="SUPPLY3" gate="GND" x="78.74" y="88.9" rot="R270"/>
-<instance part="SUPPLY4" gate="GND" x="78.74" y="83.82" rot="R270"/>
+<instance part="Y1" gate="G$1" x="88.9" y="91.44" rot="R270"/>
+<instance part="C4" gate="G$1" x="83.82" y="93.98" rot="R180"/>
+<instance part="C5" gate="G$1" x="83.82" y="88.9" rot="R180"/>
+<instance part="SUPPLY3" gate="GND" x="78.74" y="93.98" rot="R270"/>
+<instance part="SUPPLY4" gate="GND" x="78.74" y="88.9" rot="R270"/>
+<instance part="C6" gate="G$1" x="139.7" y="63.5" rot="R90"/>
+<instance part="C7" gate="G$1" x="144.78" y="63.5" rot="R90"/>
+<instance part="SUPPLY5" gate="GND" x="142.24" y="55.88"/>
+<instance part="SUPPLY6" gate="GND" x="147.32" y="55.88"/>
+<instance part="SUPPLY7" gate="GND" x="152.4" y="55.88"/>
+<instance part="SUPPLY8" gate="GND" x="139.7" y="58.42"/>
+<instance part="SUPPLY9" gate="GND" x="144.78" y="58.42"/>
 </instances>
 <busses>
 </busses>
@@ -3496,6 +3687,29 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="C5" gate="G$1" pin="2"/>
 <pinref part="SUPPLY4" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="REFGND"/>
+<wire x1="142.24" y1="58.42" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="AGND"/>
+<wire x1="147.32" y1="58.42" x2="147.32" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="DGND"/>
+<wire x1="152.4" y1="58.42" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="SUPPLY9" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -3521,7 +3735,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="111.76" y1="68.58" x2="111.76" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="RLD" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -3531,6 +3745,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <wire x1="114.3" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="RLD_OUT"/>
 <wire x1="119.38" y1="50.8" x2="119.38" y2="68.58" width="0.1524" layer="91"/>
+<label x="119.38" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -3543,19 +3758,162 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <net name="N$6" class="0">
 <segment>
 <pinref part="Y1" gate="G$1" pin="A"/>
-<pinref part="U1" gate="G$1" pin="XTAL2"/>
-<wire x1="88.9" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="93.98" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="XTAL1"/>
+<wire x1="88.9" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="Y1" gate="G$1" pin="B"/>
-<pinref part="U1" gate="G$1" pin="CLK_IO"/>
-<wire x1="88.9" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="83.82" x2="86.36" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="88.9" x2="86.36" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="XTAL2"/>
+<wire x1="88.9" y1="88.9" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="AVDD"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="139.7" y1="68.58" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="U1" gate="G$1" pin="IOVDD"/>
+<wire x1="144.78" y1="66.04" x2="144.78" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="ADAS_CS" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!CS"/>
+<wire x1="162.56" y1="121.92" x2="167.64" y2="121.92" width="0.1524" layer="91"/>
+<label x="167.64" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCLK" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="SCLK"/>
+<wire x1="162.56" y1="119.38" x2="167.64" y2="119.38" width="0.1524" layer="91"/>
+<label x="167.64" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADAS_MOSI" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="MOSI"/>
+<wire x1="162.56" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
+<label x="167.64" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ADAS_MISO" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="MISO"/>
+<wire x1="162.56" y1="114.3" x2="167.64" y2="114.3" width="0.1524" layer="91"/>
+<label x="167.64" y="114.3" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!DRDY"/>
+<wire x1="162.56" y1="104.14" x2="167.64" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!RESET"/>
+<wire x1="162.56" y1="101.6" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
+<label x="167.64" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PD" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="!PD"/>
+<wire x1="162.56" y1="99.06" x2="167.64" y2="99.06" width="0.1524" layer="91"/>
+<label x="167.64" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LA" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="LA"/>
+<wire x1="91.44" y1="127" x2="86.36" y2="127" width="0.1524" layer="91"/>
+<label x="86.36" y="127" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LL" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="LL"/>
+<wire x1="86.36" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
+<label x="86.36" y="124.46" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RA" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="RA"/>
+<wire x1="91.44" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
+<label x="86.36" y="121.92" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="V1"/>
+<wire x1="86.36" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
+<label x="86.36" y="119.38" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="V2" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="V2"/>
+<wire x1="91.44" y1="116.84" x2="86.36" y2="116.84" width="0.1524" layer="91"/>
+<label x="86.36" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+</nets>
+</sheet>
+<sheet>
+<plain>
+</plain>
+<instances>
+<instance part="FRAME2" gate="G$1" x="0" y="0">
+<attribute name="SUBSYSTEM_NAME" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="REV" x="0" y="0" size="1.778" layer="96" display="off"/>
+<attribute name="AUTHOR" x="0" y="0" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FRAME2" gate="G$2" x="147.32" y="0"/>
+<instance part="IC2" gate="G$1" x="99.06" y="83.82"/>
+<instance part="J1" gate="G$1" x="35.56" y="86.36"/>
+<instance part="SUPPLY10" gate="G$1" x="53.34" y="91.44"/>
+<instance part="SUPPLY11" gate="GND" x="53.34" y="78.74"/>
+<instance part="SUPPLY13" gate="G$1" x="86.36" y="86.36"/>
+<instance part="U$2" gate="G$1" x="114.3" y="86.36"/>
+</instances>
+<busses>
+</busses>
+<nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<wire x1="45.72" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="VCC"/>
+<pinref part="SUPPLY10" gate="G$1" pin="VCC"/>
+<wire x1="45.72" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY13" gate="G$1" pin="VCC"/>
+<pinref part="IC2" gate="G$1" pin="VIN"/>
+<wire x1="86.36" y1="86.36" x2="88.9" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="3.3V"/>
+<pinref part="U$2" gate="G$1" pin="3.3V"/>
+<wire x1="109.22" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
