@@ -27,3 +27,9 @@ There is a good chip that supposedly integrated many of the function we need on 
 [ThingSpeak](https://thingspeak.com/)
 
 [ESP8266](https://www.sparkfun.com/products/13678)
+
+## Parts
+
+All SMH components will be 0602 unless specified.
+
+[8.192MHz](https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CM309S8.192MABJT/300-2039-1-ND/482155)
