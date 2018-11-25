@@ -1,3 +1,5 @@
+# Arias Research Group - Wifi Enabled ECG
+
 [Eval Board](http://www.analog.com/media/en/technical-documentation/user-guides/UG-426.pdf)
 
 [ADAS 1000](http://www.analog.com/media/en/technical-documentation/data-sheets/ADAS1000_1000-1_1000-2.pdf)
@@ -17,6 +19,8 @@ If we break the D-Bus just find another from Digikey
 9/12 testing: We got the 5 electrode ECG to work with the software. LA, RA, LL were getting good signals when using alongside RLD and CE. We tried removing RLD for fewer electrodes and turns out the default setting uses RLD as the reference drive (pg 10 Table 5) so we cannot do that until we mess with the register settings.
 
 ADAS1000 Example Schematic: http://www.analog.com/media/en/reference-design-documentation/reference-designs/CN0308.pdf
+
+![CC3200MOD Refrence Schematic](cc3200mod_ref.jpg)
 
 ## Flashing
 
