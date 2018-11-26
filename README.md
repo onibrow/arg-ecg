@@ -37,3 +37,19 @@ There is a good chip that supposedly integrated many of the function we need on 
 All SMH components will be 0602 unless specified.
 
 [8.192MHz](https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CM309S8.192MABJT/300-2039-1-ND/482155)
+
+[1uH Inductor](https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012M1R0HT000/445-8657-1-ND/3077939)
+
+## Questions for Yasser
+
+How to route PCB Antennas? Chip Antenas? Impedence Matching? Trace Shapes?
+
+Why does the schematic for the [CC3200MOD LaunchPadXL](http://www.ti.com/lit/df/tidrc48/tidrc48.pdf) have 3 connections to the chip antenna when I can only see [two](http://www.ti.com/lit/df/tidrc48/tidrc48.pdf)? And which direction do I connect it to?
+
+Differential vs single (?) matching lines????
+
+Soldering lab access (Duta's lab?)
+
+BLE board files please - specifically interfaces and power
+
+What did you do in terms of integration with and between projects?
