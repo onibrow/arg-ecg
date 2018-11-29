@@ -53,3 +53,5 @@ Soldering lab access (Duta's lab?)
 BLE board files please - specifically interfaces and power
 
 What did you do in terms of integration with and between projects?
+
+# Add option to use batery - 40mAH
