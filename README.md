@@ -1,24 +1,30 @@
 # Arias Research Group - Wifi Enabled ECG
 
-[Eval Board](http://www.analog.com/media/en/technical-documentation/user-guides/UG-426.pdf)
+## References
 
-[ADAS 1000](http://www.analog.com/media/en/technical-documentation/data-sheets/ADAS1000_1000-1_1000-2.pdf)
+### ADAS1000
+
+[ADAS1000 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAS1000_1000-1_1000-2.pdf)
+
+[Eval Board Datasheet](http://www.analog.com/media/en/technical-documentation/user-guides/UG-426.pdf)
+
+[Reference Design](https://www.analog.com/media/en/reference-design-documentation/reference-designs/CN0308.pdf)
+
+There are two ADAS's on the eval board, one master one slave for a total of 12 electrode input. We'll utilize only 5 of them from the master chip using the pins LA, RA, LL, RLD, V1, V2. RLD (Right Leg Driver) can also be used as the common mode electrode. We can choose different electrode setups after we get the hardware to work by toggling what we want to use and get the optimal setup
 
 ![patient](patient_cable_pinout.jpg)
-
-There are two ADAS's on the board, one master one slave for a total of 12 electrode input. We'll utilize only 5 of them from the master chip using the pins LA, RA, LL, RLD, V1, V2. RLD (Right Leg Driver) can also be used as the common mode electrode. We can choose different electrode setups after we get the hardware to work by toggling what we want to use and get the optimal setup
-
-Pins to use from the Patient Cable: 7, 9, 10, 11, 14
-
-If we break the D-Bus just find another from Digikey
 
 ![trouble](trouble_shooting.png)
 
 ![unused](unused_pins.png)
 
-9/12 testing: We got the 5 electrode ECG to work with the software. LA, RA, LL were getting good signals when using alongside RLD and CE. We tried removing RLD for fewer electrodes and turns out the default setting uses RLD as the reference drive (pg 10 Table 5) so we cannot do that until we mess with the register settings.
+### CC3200MOD
 
-ADAS1000 Example Schematic: http://www.analog.com/media/en/reference-design-documentation/reference-designs/CN0308.pdf
+[CC3200MOD Datasheet](http://www.ti.com/lit/ds/swrs166/swrs166.pdf)
+
+[CC3200MOD LaunchPad User Guide](http://www.ti.com/lit/ug/swru397a/swru397a.pdf)
+
+[CC3200MOD LaunchPad Schematic](http://www.ti.com/lit/df/tidrc48/tidrc48.pdf)
 
 ![CC3200MOD Refrence Schematic](cc3200mod_ref.jpg)
 
@@ -34,24 +40,16 @@ There is a good chip that supposedly integrated many of the function we need on 
 
 ## Parts
 
-All SMH components will be 0602 unless specified.
+All SMD components will be 0602 unless specified.
 
 [8.192MHz](https://www.digikey.com/product-detail/en/citizen-finedevice-co-ltd/CM309S8.192MABJT/300-2039-1-ND/482155)
 
 [1uH Inductor](https://www.digikey.com/product-detail/en/tdk-corporation/MLZ2012M1R0HT000/445-8657-1-ND/3077939)
 
-## Questions for Yasser
+[Chip Antenna](https://www.digikey.com/product-detail/en/taiyo-yuden/AH316M245001-T/587-2200-1-ND/2002898)
 
-How to route PCB Antennas? Chip Antenas? Impedence Matching? Trace Shapes?
+[DP3T](https://www.digikey.com/product-detail/en/c-k/JS203011JCQN/CKN10725CT-ND/6137639)
 
-Why does the schematic for the [CC3200MOD LaunchPadXL](http://www.ti.com/lit/df/tidrc48/tidrc48.pdf) have 3 connections to the chip antenna when I can only see [two](http://www.ti.com/lit/df/tidrc48/tidrc48.pdf)? And which direction do I connect it to?
+## TODO
 
-Differential vs single (?) matching lines????
-
-Soldering lab access (Duta's lab?)
-
-BLE board files please - specifically interfaces and power
-
-What did you do in terms of integration with and between projects?
-
-# Add option to use batery - 40mAH
+* Add option to use batery - 40mAH
