@@ -12,11 +12,11 @@
 
 There are two ADAS's on the eval board, one master one slave for a total of 12 electrode input. We'll utilize only 5 of them from the master chip using the pins LA, RA, LL, RLD, V1, V2. RLD (Right Leg Driver) can also be used as the common mode electrode. We can choose different electrode setups after we get the hardware to work by toggling what we want to use and get the optimal setup
 
-![patient](patient_cable_pinout.jpg)
+![patient](img/patient_cable_pinout.jpg)
 
-![trouble](trouble_shooting.png)
+![trouble](img/trouble_shooting.png)
 
-![unused](unused_pins.png)
+![unused](img/unused_pins.png)
 
 ### CC3200MOD
 
@@ -26,7 +26,7 @@ There are two ADAS's on the eval board, one master one slave for a total of 12 e
 
 [CC3200MOD LaunchPad Schematic](http://www.ti.com/lit/df/tidrc48/tidrc48.pdf)
 
-![CC3200MOD Refrence Schematic](cc3200mod_ref.jpg)
+![CC3200MOD Refrence Schematic](img/cc3200mod_ref.jpg)
 
 ## Flashing
 
