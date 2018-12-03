@@ -50,6 +50,8 @@ All SMD components will be 0602 unless specified.
 
 [DP3T](https://www.digikey.com/product-detail/en/c-k/JS203011JCQN/CKN10725CT-ND/6137639)
 
+[2Pin JST](https://www.digikey.com/product-detail/en/jst-sales-america-inc/B2B-XH-A(LF)(SN)/455-2247-ND/1651045)
+
 ## TODO
 
 * Add option to use batery - 40mAH
