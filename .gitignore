@@ -7,6 +7,7 @@ __pycache__/
 *.swo
 .*.swo
 *.ipynb_checkpoints
+*.zip
 
 #########
 # EAGLE #
@@ -16,6 +17,7 @@ __pycache__/
 
 # backup sch/brd files
 **/*.[b,s,l,d]#*
+*.job
 
 ##########
 # Gerbers #
