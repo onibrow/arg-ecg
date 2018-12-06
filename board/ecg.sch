@@ -9608,8 +9608,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <part name="SUPPLY25" library="scono" deviceset="GND" device=""/>
 <part name="U$3" library="scono" deviceset="3.3V" device=""/>
 <part name="J4" library="scono" deviceset="2_PIN_JST-XH" device=""/>
-<part name="UART" library="scono" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="PROG"/>
-<part name="GND" library="scono" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="J5" library="scono" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="UART"/>
+<part name="J6" library="scono" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -10113,8 +10113,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <instance part="J3" gate="G$1" x="86.36" y="91.44"/>
 <instance part="R5" gate="G$1" x="71.12" y="91.44" rot="R270"/>
 <instance part="SUPPLY23" gate="GND" x="71.12" y="83.82"/>
-<instance part="UART" gate="G$1" x="210.82" y="88.9" rot="R180"/>
-<instance part="GND" gate="G$1" x="213.36" y="68.58" rot="R180"/>
+<instance part="J5" gate="G$1" x="210.82" y="88.9" rot="R180"/>
+<instance part="J6" gate="G$1" x="213.36" y="68.58" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -10169,14 +10169,14 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="71.12" y1="86.36" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND" gate="G$1" pin="1"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="68.58" x2="205.74" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="GND" gate="G$1" pin="2"/>
+<pinref part="J6" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="68.58" x2="205.74" y2="66.04" width="0.1524" layer="91"/>
 <label x="200.66" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UART" gate="G$1" pin="4"/>
+<pinref part="J5" gate="G$1" pin="4"/>
 <wire x1="205.74" y1="83.82" x2="200.66" y2="83.82" width="0.1524" layer="91"/>
 <label x="198.12" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -10205,7 +10205,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <label x="40.64" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UART" gate="G$1" pin="1"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
 <label x="198.12" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -10423,7 +10423,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <label x="157.48" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UART" gate="G$1" pin="3"/>
+<pinref part="J5" gate="G$1" pin="3"/>
 <wire x1="205.74" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
 <label x="190.5" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -10435,7 +10435,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <label x="157.48" y="91.44" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="UART" gate="G$1" pin="2"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="88.9" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <label x="190.5" y="88.9" size="1.778" layer="95"/>
 </segment>
