@@ -8,8 +8,8 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -22,20 +22,20 @@
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -55,7 +55,7 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
@@ -1195,8 +1195,8 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <attribute name="PIE-INT-REF-NUM" value="CAPACITOR-GENERIC" x="48.4" y="8.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="49.797" y="7.23" size="0.508" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="E1" library="scono" package="CHIP_ANT" value="" x="51.2" y="7.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="50.2" y="9.9" size="0.4" layer="25" font="vector" rot="R270" align="top-left"/>
+<element name="E1" library="scono" package="CHIP_ANT" value="" x="51.2" y="7.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="50.2" y="10" size="0.4" layer="25" font="vector" rot="R270" align="top-left"/>
 </element>
 <element name="D16" library="scono" package="LED-0603" value="RED" x="42.102" y="32.778" smashed="yes"/>
 <element name="D17" library="scono" package="LED-0603" value="BLUE" x="42.102" y="31.254" smashed="yes"/>
@@ -1318,7 +1318,6 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <contactref element="C8" pad="2"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C11" pad="1"/>
-<contactref element="E1" pad="GND"/>
 <contactref element="U2" pad="P$28"/>
 <contactref element="U2" pad="P$2"/>
 <contactref element="U2" pad="P$32"/>
@@ -1403,8 +1402,8 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <wire x1="6.8" y1="25.6" x2="6.8" y2="25" width="0.254" layer="1"/>
 <wire x1="2.8" y1="27.74" x2="4.66" y2="27.74" width="0.254" layer="1"/>
 <wire x1="4.66" y1="27.74" x2="6.8" y2="25.6" width="0.254" layer="1"/>
-<wire x1="51.2" y1="6.1" x2="48.4" y2="7.65" width="0" layer="19" extent="1-1"/>
-<wire x1="44.29" y1="8.145" x2="48.4" y2="7.65" width="0" layer="19" extent="1-1"/>
+<wire x1="48.4" y1="7.65" x2="44.785" y2="7.65" width="0.254" layer="1"/>
+<wire x1="44.785" y1="7.65" x2="44.29" y2="8.145" width="0.254" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C3" pad="1"/>
@@ -1672,19 +1671,16 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <contactref element="U2" pad="P$31"/>
 <contactref element="L2" pad="1"/>
 <wire x1="44.29" y1="9.415" x2="44.305" y2="9.4" width="0.254" layer="1"/>
-<wire x1="44.305" y1="9.4" x2="45.7285" y2="9.4" width="0.254" layer="1"/>
+<wire x1="44.305" y1="9.4" x2="45.7285" y2="9.4" width="0.8382" layer="1"/>
 </signal>
 <signal name="RF_IN">
 <contactref element="L2" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="E1" pad="INPUT"/>
-<wire x1="46.8715" y1="9.4" x2="48.35" y2="9.4" width="0.254" layer="1"/>
-<wire x1="48.35" y1="9.4" x2="48.4" y2="9.35" width="0.254" layer="1"/>
-<wire x1="48.4" y1="9.35" x2="48.95" y2="9.9" width="0.254" layer="1"/>
-<wire x1="50.6" y1="9.9" x2="51.173" y2="9.327" width="0.254" layer="1"/>
-<wire x1="51.173" y1="9.327" x2="51.2" y2="9.327" width="0.254" layer="1"/>
-<wire x1="48.95" y1="9.9" x2="50.6" y2="9.9" width="0.254" layer="1"/>
-<wire x1="51.2" y1="9.3" x2="51.173" y2="9.327" width="0.254" layer="1"/>
+<wire x1="51.2" y1="9.4" x2="48.45" y2="9.4" width="0.8382" layer="1"/>
+<wire x1="48.45" y1="9.4" x2="48.4" y2="9.35" width="0.254" layer="1"/>
+<wire x1="48.4" y1="9.35" x2="46.9215" y2="9.35" width="0.8382" layer="1"/>
+<wire x1="46.9215" y1="9.35" x2="46.8715" y2="9.4" width="0.254" layer="1"/>
 </signal>
 <signal name="N$24">
 <contactref element="D16" pad="A"/>

@@ -9580,7 +9580,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <part name="SUPPLY17" library="scono" deviceset="GND" device=""/>
 <part name="E1" library="scono" deviceset="AH316M245001-T" device=""/>
 <part name="SUPPLY18" library="scono" deviceset="GND" device=""/>
-<part name="SUPPLY19" library="scono" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="scono" deviceset="GND" device=""/>
 <part name="D16" library="scono" deviceset="LED" device="0603" value="RED"/>
 <part name="D17" library="scono" deviceset="LED" device="0603" value="BLUE"/>
@@ -10094,7 +10093,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <instance part="SUPPLY17" gate="GND" x="78.74" y="127"/>
 <instance part="E1" gate="G$1" x="71.12" y="134.62"/>
 <instance part="SUPPLY18" gate="GND" x="71.12" y="127"/>
-<instance part="SUPPLY19" gate="GND" x="78.74" y="137.16" rot="R90"/>
 <instance part="SUPPLY20" gate="GND" x="106.68" y="71.12"/>
 <instance part="D16" gate="G$1" x="40.64" y="27.94"/>
 <instance part="D17" gate="G$1" x="50.8" y="27.94"/>
@@ -10131,10 +10129,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <segment>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="E1" gate="G$1" pin="GND"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 <segment>
 <pinref part="SUPPLY20" gate="GND" pin="GND"/>
