@@ -34,6 +34,8 @@ There are two ADAS's on the eval board, one master one slave for a total of 12 e
 
 [CC3200 SPI <-> ADAS1000](https://ez.analog.com/linux-device-drivers/microcontroller-no-os-drivers/f/q-a/88100/adas-1000-to-arduino-code)
 
+[More SPI stuff](https://www.element14.com/community/thread/46120/l/adas1000-interfacing-by-arduino-uno?displayFullThread=true)
+
 ## Flashing
 
 There is a good chip that supposedly integrated many of the function we need on a single module: the [CC3200MOD](http://www.ti.com/product/CC3200MOD/samplebuy). [Here](https://e2e.ti.com/support/wireless_connectivity/simplelink_wifi_cc31xx_cc32xx/f/968/t/514171?Questions-about-how-to-program-a-CC3200-based-custom-board) is a forumn post that answers how to flash the chip.
