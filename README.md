@@ -18,6 +18,8 @@ There are two ADAS's on the eval board, one master one slave for a total of 12 e
 
 ![unused](img/unused_pins.png)
 
+![J4 SPI Out](img/spi_pinoutJ4.png)
+
 ### CC3200MOD
 
 [CC3200MOD Datasheet](http://www.ti.com/lit/ds/swrs166/swrs166.pdf)
