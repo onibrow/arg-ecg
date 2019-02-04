@@ -1107,15 +1107,15 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <attribute name="PIE-INT-REF-NUM" value="CAPACITOR-GENERIC" x="10.06" y="5.01" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="11.33" y="6.407" size="0.508" layer="27" font="vector" rot="R180"/>
 </element>
-<element name="C5" library="scono" package="0603-CAP" value="18pF" x="23.7" y="7.29" smashed="yes">
-<attribute name="NAME" x="22.05" y="7.148" size="0.508" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="PIE-INT-REF-NUM" value="CAPACITOR-GENERIC" x="23.7" y="7.29" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="22.43" y="5.893" size="0.508" layer="27" font="vector"/>
+<element name="C5" library="scono" package="0603-CAP" value="18pF" x="23.7" y="6.39" smashed="yes">
+<attribute name="NAME" x="22.05" y="6.248" size="0.508" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="PIE-INT-REF-NUM" value="CAPACITOR-GENERIC" x="23.7" y="6.39" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="22.43" y="4.993" size="0.508" layer="27" font="vector"/>
 </element>
-<element name="C6" library="scono" package="0603-CAP" value="10uF" x="23.7" y="8.81" smashed="yes" rot="R180">
-<attribute name="NAME" x="22.07" y="8.648" size="0.508" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="PIE-INT-REF-NUM" value="CAPACITOR-GENERIC" x="23.7" y="8.81" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="24.97" y="10.207" size="0.508" layer="27" font="vector" rot="R180"/>
+<element name="C6" library="scono" package="0603-CAP" value="10uF" x="23.7" y="8.81" smashed="yes">
+<attribute name="NAME" x="21.63" y="7.672" size="0.508" layer="25" font="vector" ratio="10"/>
+<attribute name="PIE-INT-REF-NUM" value="CAPACITOR-GENERIC" x="23.7" y="8.81" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="22.43" y="7.413" size="0.508" layer="27" font="vector"/>
 </element>
 <element name="C7" library="scono" package="0603-CAP" value="10uF" x="9.6" y="22.97" smashed="yes">
 <attribute name="NAME" x="11.33" y="22.232" size="0.508" layer="25" font="vector" ratio="10"/>
@@ -1296,6 +1296,17 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <attribute name="PACKAGE" value="R0603" x="26.5" y="7.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="27.516" y="6.33" size="0.508" layer="27" font="vector" rot="R90" align="top-left"/>
 </element>
+<element name="R7" library="scono" package="R0603" value="" x="47.4" y="14" smashed="yes">
+<attribute name="DESCRIPTION" value="RESISTOR, American symbol" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR" value="DigiKey" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="DISTRIBUTOR_PART_NUMBER" value="" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Rohm Semiconductor" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="46.13" y="14.889" size="0.508" layer="25" font="vector" ratio="10"/>
+<attribute name="NOTES" value="Cut Tape" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="R0603" x="47.4" y="14" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="46.13" y="12.984" size="0.508" layer="27" font="vector" align="top-left"/>
+</element>
 </elements>
 <signals>
 <signal name="N$1">
@@ -1421,13 +1432,28 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <wire x1="4.66" y1="27.74" x2="6.8" y2="25.6" width="0.254" layer="1"/>
 <wire x1="48.4" y1="7.65" x2="44.785" y2="7.65" width="0.254" layer="1"/>
 <wire x1="44.785" y1="7.65" x2="44.29" y2="8.145" width="0.254" layer="1"/>
-<contactref element="R6" pad="1"/>
 <wire x1="23.17" y1="14.71" x2="21.51" y2="14.71" width="0.254" layer="1"/>
 <wire x1="21.51" y1="14.71" x2="21.5" y2="14.7" width="0.254" layer="1"/>
 <via x="21.5" y="14.7" extent="1-16" drill="0.381"/>
 <wire x1="21.5" y1="14.7" x2="20.8" y2="14" width="0.254" layer="16"/>
 <wire x1="20.8" y1="14" x2="18.8" y2="14" width="0.254" layer="16"/>
 <via x="18.8" y="14" extent="1-16" drill="0.381"/>
+<via x="21.7" y="11.5" extent="1-16" drill="0.381"/>
+<wire x1="23.17" y1="11.71" x2="23.0894" y2="11.6294" width="0.254" layer="1"/>
+<wire x1="23.0894" y1="11.6294" x2="22.2882125" y2="11.6294" width="0.254" layer="1"/>
+<wire x1="22.2882125" y1="11.6294" x2="22.1588125" y2="11.5" width="0.254" layer="1"/>
+<wire x1="22.1588125" y1="11.5" x2="21.7" y2="11.5" width="0.254" layer="1"/>
+<wire x1="21.7" y1="11.5" x2="21.3" y2="11.5" width="0.254" layer="16"/>
+<wire x1="21.3" y1="11.5" x2="18.8" y2="14" width="0.254" layer="16"/>
+<wire x1="48.33" y1="15.67" x2="48.4" y2="15.6" width="0.254" layer="1"/>
+<wire x1="48.4" y1="15.6" x2="50.7" y2="15.6" width="0.254" layer="1"/>
+<via x="50.7" y="15.6" extent="1-16" drill="0.381"/>
+<wire x1="50.7" y1="15.6" x2="50.7" y2="14.9" width="0.254" layer="16"/>
+<wire x1="47.7" y1="11.9" x2="42.2" y2="11.9" width="0.254" layer="16"/>
+<via x="42.2" y="11.9" extent="1-16" drill="0.381"/>
+<wire x1="50.7" y1="14.9" x2="47.7" y2="11.9" width="0.254" layer="16"/>
+<wire x1="48.35" y1="17.27" x2="48.33" y2="17.25" width="0.254" layer="1"/>
+<wire x1="48.33" y1="17.25" x2="48.33" y2="15.67" width="0.254" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="C3" pad="1"/>
@@ -1492,7 +1518,7 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <wire x1="19.24" y1="9.28" x2="19.24" y2="7.59" width="0.254" layer="1"/>
 <wire x1="19.24" y1="7.59" x2="23.77" y2="3.06" width="0.254" layer="1"/>
 <wire x1="23.77" y1="3.06" x2="22.85" y2="3.98" width="0.254" layer="1"/>
-<wire x1="22.85" y1="3.98" x2="22.85" y2="7.29" width="0.254" layer="1"/>
+<wire x1="22.85" y1="3.98" x2="22.85" y2="6.39" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3V">
 <contactref element="U1" pad="18"/>
@@ -1533,14 +1559,13 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <wire x1="21.8" y1="17.7" x2="21.81" y2="17.71" width="0.254" layer="1"/>
 <wire x1="21.81" y1="17.71" x2="23.17" y2="17.71" width="0.254" layer="1"/>
 <wire x1="21.99" y1="12.21" x2="23.17" y2="12.21" width="0.254" layer="1"/>
-<wire x1="21.99" y1="12.21" x2="20.78" y2="11" width="0.254" layer="1"/>
+<wire x1="20.79" y1="11.01" x2="20.78" y2="11" width="0.254" layer="1"/>
 <wire x1="20.78" y1="11" x2="17.6" y2="11" width="0.254" layer="1"/>
 <wire x1="17.6" y1="11" x2="16.74" y2="10.14" width="0.254" layer="1"/>
 <wire x1="16.74" y1="10.14" x2="16.74" y2="9.28" width="0.254" layer="1"/>
 <wire x1="14.24" y1="9.28" x2="14.24" y2="10.14" width="0.254" layer="1"/>
 <wire x1="15.1" y1="11" x2="17.6" y2="11" width="0.254" layer="1"/>
 <wire x1="14.24" y1="10.14" x2="15.1" y2="11" width="0.254" layer="1"/>
-<wire x1="20.78" y1="11" x2="21.1" y2="11" width="0.254" layer="1"/>
 <wire x1="44.29" y1="15.765" x2="44.5" y2="15.765" width="0.254" layer="1"/>
 <wire x1="44.5" y1="15.765" x2="46.535" y2="15.765" width="0.254" layer="1"/>
 <wire x1="46.535" y1="15.765" x2="46.63" y2="15.67" width="0.254" layer="1"/>
@@ -1589,9 +1614,19 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <wire x1="20.3" y1="13.9" x2="21.99" y2="12.21" width="0.254" layer="1"/>
 <wire x1="21.8" y1="17.7" x2="20.3" y2="16.2" width="0.254" layer="1"/>
 <wire x1="20.3" y1="16.2" x2="20.3" y2="13.9" width="0.254" layer="1"/>
-<wire x1="21.1" y1="11" x2="22.85" y2="9.25" width="0.254" layer="1"/>
-<wire x1="22.85" y1="9.25" x2="22.85" y2="8.81" width="0.254" layer="1"/>
 <wire x1="23.15" y1="20.65" x2="23.15" y2="21.4" width="0.254" layer="1"/>
+<contactref element="R6" pad="1"/>
+<wire x1="24.55" y1="8.81" x2="22.96" y2="10.4" width="0.254" layer="1"/>
+<wire x1="21.4" y1="10.4" x2="20.79" y2="11.01" width="0.254" layer="1"/>
+<wire x1="22.96" y1="10.4" x2="21.4" y2="10.4" width="0.254" layer="1"/>
+<wire x1="24.55" y1="8.81" x2="24.55" y2="8.35" width="0.254" layer="1"/>
+<wire x1="26.15" y1="6.75" x2="26.5" y2="6.75" width="0.254" layer="1"/>
+<wire x1="24.55" y1="8.35" x2="26.15" y2="6.75" width="0.254" layer="1"/>
+<wire x1="20.3" y1="13.9" x2="20.3" y2="11.5" width="0.254" layer="1"/>
+<wire x1="20.3" y1="11.5" x2="20.79" y2="11.01" width="0.254" layer="1"/>
+<contactref element="R7" pad="2"/>
+<wire x1="46.63" y1="15.67" x2="48.25" y2="14.05" width="0.254" layer="1"/>
+<wire x1="48.25" y1="14.05" x2="48.25" y2="14" width="0.254" layer="1"/>
 </signal>
 <signal name="ADAS_CS">
 <contactref element="U1" pad="41"/>
@@ -1814,6 +1849,9 @@ Combination of BAC and AC - D. Hutchings + S. Ono
 <via x="42.9" y="14.6" extent="1-16" drill="0.4064"/>
 <wire x1="42.9" y1="14.6" x2="44.185" y2="14.6" width="0.254" layer="1"/>
 <wire x1="44.185" y1="14.6" x2="44.29" y2="14.495" width="0.254" layer="1"/>
+<contactref element="R7" pad="1"/>
+<wire x1="46.55" y1="14" x2="46.055" y2="14.495" width="0.254" layer="1"/>
+<wire x1="46.055" y1="14.495" x2="44.29" y2="14.495" width="0.254" layer="1"/>
 </signal>
 <signal name="SOP2">
 <contactref element="J2" pad="4"/>

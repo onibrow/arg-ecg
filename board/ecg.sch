@@ -9608,7 +9608,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <part name="J6" library="scono" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1" value="GND"/>
 <part name="J7" library="scono" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1" value="SPI"/>
 <part name="R6" library="scono" deviceset="R-US_" device="R0603" value="10k"/>
-<part name="SUPPLY19" library="scono" deviceset="GND" device=""/>
+<part name="R7" library="scono" deviceset="R-US_" device="R0603"/>
+<part name="U$4" library="scono" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9817,9 +9818,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <attribute name="NAME" x="46.99" y="104.14" size="1.016" layer="95" rot="R90"/>
 <attribute name="VALUE" x="49.53" y="104.14" size="1.016" layer="96" rot="R90" align="top-left"/>
 </instance>
-<instance part="SUPPLY19" gate="GND" x="48.26" y="101.6" smashed="yes">
-<attribute name="VALUE" x="46.99" y="99.06" size="1.016" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -9888,10 +9886,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <segment>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="SUPPLY25" gate="GND" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="SUPPLY19" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -9975,6 +9969,10 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="U$3" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="104.14" x2="48.26" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADAS_CS" class="0">
@@ -10401,6 +10399,13 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <attribute name="VALUE" x="215.9" y="73.406" size="1.778" layer="96" font="vector" rot="R180"/>
 <attribute name="NAME" x="215.9" y="62.992" size="1.778" layer="95" font="vector" rot="R180"/>
 </instance>
+<instance part="R7" gate="G$1" x="205.74" y="127" smashed="yes" rot="R90">
+<attribute name="NAME" x="204.47" y="121.92" size="1.016" layer="95" rot="R90"/>
+<attribute name="VALUE" x="207.01" y="121.92" size="1.016" layer="96" rot="R90" align="top-left"/>
+</instance>
+<instance part="U$4" gate="G$1" x="205.74" y="129.54" smashed="yes">
+<attribute name="VALUE" x="204.47" y="133.35" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10490,6 +10495,10 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
 <label x="198.12" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="U$4" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="SCLK" class="0">
@@ -10652,6 +10661,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="205.74" y1="121.92" x2="200.66" y2="121.92" width="0.1524" layer="91"/>
 <label x="195.58" y="121.92" size="1.778" layer="95"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<junction x="205.74" y="121.92"/>
 </segment>
 </net>
 <net name="SOP2" class="0">
