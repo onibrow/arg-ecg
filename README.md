@@ -48,6 +48,10 @@ There is a good chip that supposedly integrated many of the function we need on 
 
 [ESP8266](https://www.sparkfun.com/products/13678)
 
+## IoT Server
+
+Thinger.io is pretty nice - also has good integration with the launchpad - [Link](http://docs.thinger.io/arduino/#installation)
+
 ## Parts
 
 All SMD components will be 0602 unless specified.
