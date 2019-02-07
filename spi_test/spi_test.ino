@@ -6,6 +6,8 @@ Author: Seiya Ono
 */
 
 #include <SPI.h>
+#include <WiFi.h>
+#include <ThingerWifi.h>
 
 //ADAS1000's memory register addresses:
 const char NOP       = 0x00;
@@ -28,6 +30,8 @@ const int CS = 18;
 unsigned char buff[4];
 
 bool DEBUG = false;
+
+ThingerWifi thing("onibrow", "CC3200", "ew4#ZfCEY#30");
 
 void setup() {
   Serial.begin(9600);
