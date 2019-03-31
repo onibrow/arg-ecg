@@ -45,3 +45,10 @@ __pycache__/
 *.sco
 placement.*
 toollist.*
+
+##########
+# Object #
+##########
+
+*.d
+*.o
