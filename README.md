@@ -4,9 +4,24 @@
 
 ### BLE
 
-[Simple LED Example](https://www.novelbits.io/smart-ble-lightbulb-application-nrf52/)
+Task - Use the nRF52 Development Kit to send ECG data from the ADAS1000 over BLE to a phone to record data.
 
 After careful assesment, I've decided to move forward with the Arduino BLEPeripheral library, after finding that someone has ported the SoftDevice functionality to Arduino IDE. This was mainly due to my unfamiliarity with the BLE stack, and the daunting, semeingly unknown and unfriendly Nordic toolchain.
+
+To get it to work, I had to install a few packages:
+
+```
+libstdc++5
+lib32-libstdc++5
+libudev0-shim
+gperf
+lib32-attr
+lib32-libcap
+lib32-libgpg-error
+libg32-libgcrypt
+lib32-system
+lib32-libudev0-shim
+```
 
 [nRF5 board files](https://github.com/sandeepmistry/arduino-nRF5)
 
@@ -24,6 +39,11 @@ After careful assesment, I've decided to move forward with the Arduino BLEPeriph
 
 There are two ADAS's on the eval board, one master one slave for a total of 12 electrode input. We'll utilize only 5 of them from the master chip using the pins LA, RA, LL, RLD, V1, V2. RLD (Right Leg Driver) can also be used as the common mode electrode. We can choose different electrode setups after we get the hardware to work by toggling what we want to use and get the optimal setup
 
+SPI communication details
+
+* Clock Polarity: Idle HIGH
+* Clock Phase: Data is clocked into ADAS during the rising edges of SCLK, and shifted out (to be read) on falling edges of SCLK
+
 ![patient](img/patient_cable_pinout.jpg)
 
 ![trouble](img/trouble_shooting.png)
@@ -34,7 +54,7 @@ There are two ADAS's on the eval board, one master one slave for a total of 12 e
 
 [SPI Register Defs Page 60](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAS1000_1000-1_1000-2.pdf)
 
-### CC3200MOD
+### CC3200MOD\[DEPRACATED\] (WiFi)
 
 [CC3200MOD Datasheet](http://www.ti.com/lit/ds/swrs166/swrs166.pdf)
 
@@ -50,16 +70,6 @@ There are two ADAS's on the eval board, one master one slave for a total of 12 e
 
 [More SPI stuff](https://www.element14.com/community/thread/46120/l/adas1000-interfacing-by-arduino-uno?displayFullThread=true)
 
-### ADAS1000
-
-SPI communication details
-
-* Clock Polarity: Idle HIGH
-* Clock Phase: Data is clocked into ADAS during the rising edges of SCLK, and shifted out (to be read) on falling edges of SCLK
-
-## Flashing
-
-There is a good chip that supposedly integrated many of the function we need on a single module: the [CC3200MOD](http://www.ti.com/product/CC3200MOD/samplebuy). [Here](https://e2e.ti.com/support/wireless_connectivity/simplelink_wifi_cc31xx_cc32xx/f/968/t/514171?Questions-about-how-to-program-a-CC3200-based-custom-board) is a forumn post that answers how to flash the chip.
 
 ## Other Wifi Modules
 
