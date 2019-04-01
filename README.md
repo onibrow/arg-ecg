@@ -6,6 +6,14 @@
 
 [Simple LED Example](https://www.novelbits.io/smart-ble-lightbulb-application-nrf52/)
 
+After careful assesment, I've decided to move forward with the Arduino BLEPeripheral library, after finding that someone has ported the SoftDevice functionality to Arduino IDE. This was mainly due to my unfamiliarity with the BLE stack, and the daunting, semeingly unknown and unfriendly Nordic toolchain.
+
+[nRF5 board files](https://github.com/sandeepmistry/arduino-nRF5)
+
+[Arduino BLEPeripheral](https://github.com/sandeepmistry/arduino-BLEPeripheral)
+
+![ard conf](img/arduino_conf.png)
+
 ### ADAS1000
 
 [ADAS1000 Datasheet](https://www.analog.com/media/en/technical-documentation/data-sheets/ADAS1000_1000-1_1000-2.pdf)
