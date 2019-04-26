@@ -195,6 +195,7 @@ int main(void)
     ADAS_1000_read_reg(&spi, LOFFCTL);
     
     // Start Frame Readout
+    printf("\n---Starting Frame Acquisition\n");
     ADAS_1000_read_reg(&spi, FRAMES);
     while (1)
     {
